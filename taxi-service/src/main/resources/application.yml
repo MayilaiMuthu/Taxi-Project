@@ -1,0 +1,33 @@
+#/** * @author MayilaiMuthu * @since 15-07-2023 **/
+
+#Data Source Config
+
+spring:
+   datasource:
+       driver-class-name: com.mysql.cj.jdbc.Driver
+       url: jdbc:mysql://localhost/taxi
+       username: root
+       password: root
+       
+#Console Config
+
+#   h2:
+#    console:
+#      enabled: true  
+       
+#JPA Config
+
+   jpa:
+      show-sql: true
+      hibernate:
+         ddl-auto: update
+      properties:
+         hibernate:
+             dialect: org.hibernate.dialect.MySQL5Dialect
+             
+#Server Config             
+
+server:
+    port: 7071
+    servlet:
+      context-path: /api
