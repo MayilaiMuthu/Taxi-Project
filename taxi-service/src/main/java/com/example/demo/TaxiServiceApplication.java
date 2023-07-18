@@ -14,7 +14,7 @@ import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties
 
 @EnableCaching
 @EnableEncryptableProperties
-@ComponentScan(basePackages = "com.example.*")
+@ComponentScan(basePackages = "com.example.*") 
 @SpringBootApplication
 public class TaxiServiceApplication {
 
