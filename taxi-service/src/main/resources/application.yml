@@ -11,9 +11,16 @@ spring:
        
 #Console Config
 
-#   h2:
-#    console:
-#      enabled: true  
+   h2:
+    console:
+      enabled: true  
+      
+#Console Config
+
+   mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp       
        
 #JPA Config
 

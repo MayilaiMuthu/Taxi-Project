@@ -42,5 +42,11 @@ public class TaxiController {
 		log.debug("Inputs are : " + bookTaxiInput);
 		return new ResponseEntity<>(service.bookTaxi(bookTaxiInput), HttpStatus.CREATED);
 	}
+	
+	@GetMapping("/test")
+	public String test() {
+		log.info("CURD Controller : Method Name is => healthCheck()");
+		return "test";
+	}
 
 }
